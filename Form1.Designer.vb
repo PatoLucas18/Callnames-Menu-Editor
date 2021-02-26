@@ -56,6 +56,9 @@ Partial Class Form1
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
         Me.OFDs_sound = New System.Windows.Forms.OpenFileDialog()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.NUDCallname, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -63,6 +66,7 @@ Partial Class Form1
         Me.GroupBox3.SuspendLayout()
         Me.GroupBox5.SuspendLayout()
         Me.GroupBox4.SuspendLayout()
+        Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
         '
         'DataGridView1
@@ -128,7 +132,7 @@ Partial Class Form1
         '
         Me.AbrirToolStripMenuItem.Name = "AbrirToolStripMenuItem"
         Me.AbrirToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.O), System.Windows.Forms.Keys)
-        Me.AbrirToolStripMenuItem.Size = New System.Drawing.Size(42, 20)
+        Me.AbrirToolStripMenuItem.Size = New System.Drawing.Size(45, 20)
         Me.AbrirToolStripMenuItem.Text = "Abrir"
         '
         'GuardarToolStripMenuItem
@@ -136,7 +140,7 @@ Partial Class Form1
         Me.GuardarToolStripMenuItem.Enabled = False
         Me.GuardarToolStripMenuItem.Name = "GuardarToolStripMenuItem"
         Me.GuardarToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.S), System.Windows.Forms.Keys)
-        Me.GuardarToolStripMenuItem.Size = New System.Drawing.Size(58, 20)
+        Me.GuardarToolStripMenuItem.Size = New System.Drawing.Size(61, 20)
         Me.GuardarToolStripMenuItem.Text = "Guardar"
         '
         'GuardarComoToolStripMenuItem
@@ -144,8 +148,8 @@ Partial Class Form1
         Me.GuardarComoToolStripMenuItem.Enabled = False
         Me.GuardarComoToolStripMenuItem.Name = "GuardarComoToolStripMenuItem"
         Me.GuardarComoToolStripMenuItem.ShortcutKeys = CType(((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.Shift) _
-                    Or System.Windows.Forms.Keys.S), System.Windows.Forms.Keys)
-        Me.GuardarComoToolStripMenuItem.Size = New System.Drawing.Size(88, 20)
+            Or System.Windows.Forms.Keys.S), System.Windows.Forms.Keys)
+        Me.GuardarComoToolStripMenuItem.Size = New System.Drawing.Size(97, 20)
         Me.GuardarComoToolStripMenuItem.Text = "Guardar Como"
         '
         'LanguageToolStripMenuItem
@@ -153,7 +157,7 @@ Partial Class Form1
         Me.LanguageToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
         Me.LanguageToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EspañolToolStripMenuItem, Me.EnglishToolStripMenuItem})
         Me.LanguageToolStripMenuItem.Name = "LanguageToolStripMenuItem"
-        Me.LanguageToolStripMenuItem.Size = New System.Drawing.Size(66, 20)
+        Me.LanguageToolStripMenuItem.Size = New System.Drawing.Size(71, 20)
         Me.LanguageToolStripMenuItem.Text = "Language"
         '
         'EspañolToolStripMenuItem
@@ -161,13 +165,13 @@ Partial Class Form1
         Me.EspañolToolStripMenuItem.Checked = True
         Me.EspañolToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked
         Me.EspañolToolStripMenuItem.Name = "EspañolToolStripMenuItem"
-        Me.EspañolToolStripMenuItem.Size = New System.Drawing.Size(122, 22)
+        Me.EspañolToolStripMenuItem.Size = New System.Drawing.Size(115, 22)
         Me.EspañolToolStripMenuItem.Text = "Español"
         '
         'EnglishToolStripMenuItem
         '
         Me.EnglishToolStripMenuItem.Name = "EnglishToolStripMenuItem"
-        Me.EnglishToolStripMenuItem.Size = New System.Drawing.Size(122, 22)
+        Me.EnglishToolStripMenuItem.Size = New System.Drawing.Size(115, 22)
         Me.EnglishToolStripMenuItem.Text = "English"
         '
         'BtnAgregar
@@ -299,7 +303,7 @@ Partial Class Form1
         Me.GroupBox5.Controls.Add(Me.Btnplay2)
         Me.GroupBox5.Controls.Add(Me.BtnStop2)
         Me.GroupBox5.ForeColor = System.Drawing.Color.Black
-        Me.GroupBox5.Location = New System.Drawing.Point(413, 393)
+        Me.GroupBox5.Location = New System.Drawing.Point(413, 453)
         Me.GroupBox5.Name = "GroupBox5"
         Me.GroupBox5.Size = New System.Drawing.Size(266, 60)
         Me.GroupBox5.TabIndex = 81
@@ -367,11 +371,44 @@ Partial Class Form1
         Me.OFDs_sound.Filter = "Afs files|*.afs"
         Me.OFDs_sound.Title = "Seleccionar Ejecutabel PES6 o WE9"
         '
+        'GroupBox2
+        '
+        Me.GroupBox2.Controls.Add(Me.Button2)
+        Me.GroupBox2.Controls.Add(Me.Button3)
+        Me.GroupBox2.ForeColor = System.Drawing.Color.Black
+        Me.GroupBox2.Location = New System.Drawing.Point(413, 336)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(266, 67)
+        Me.GroupBox2.TabIndex = 85
+        Me.GroupBox2.TabStop = False
+        Me.GroupBox2.Text = "CSV"
+        '
+        'Button2
+        '
+        Me.Button2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Button2.Location = New System.Drawing.Point(7, 22)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(125, 27)
+        Me.Button2.TabIndex = 4
+        Me.Button2.Text = "importar"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Button3
+        '
+        Me.Button3.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Button3.Location = New System.Drawing.Point(135, 22)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(125, 27)
+        Me.Button3.TabIndex = 77
+        Me.Button3.Text = "exportar"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(688, 572)
+        Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox4)
         Me.Controls.Add(Me.GroupBox5)
         Me.Controls.Add(Me.GroupBox3)
@@ -393,6 +430,7 @@ Partial Class Form1
         Me.GroupBox3.PerformLayout()
         Me.GroupBox5.ResumeLayout(False)
         Me.GroupBox4.ResumeLayout(False)
+        Me.GroupBox2.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -429,5 +467,7 @@ Partial Class Form1
     Friend WithEvents GroupBox4 As System.Windows.Forms.GroupBox
     Friend WithEvents OFDs_sound As System.Windows.Forms.OpenFileDialog
     Friend WithEvents Timer1 As System.Windows.Forms.Timer
-
+    Friend WithEvents GroupBox2 As GroupBox
+    Friend WithEvents Button2 As Button
+    Friend WithEvents Button3 As Button
 End Class

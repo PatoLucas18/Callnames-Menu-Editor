@@ -82,7 +82,7 @@ Public Class Form1
         End If
     End Sub
     Private Sub Guardar(ByVal filename As String)
-        Dim fs As New FileStream(filename, FileMode.Open)
+        Dim fs As New FileStream(filename, FileMode.OpenOrCreate)
         Dim bw As New BinaryWriter(fs)
         Me.Text = OFD.FileName & " - Callnames Menú editor"
         DataGridView1.Sort(DataGridView1.Columns(1), System.ComponentModel.ListSortDirection.Ascending)
@@ -737,5 +737,72 @@ Public Class Form1
     Private Sub DataGridView1_DoubleClick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles DataGridView1.DoubleClick
         adx_extract(OFDs_sound.FileName, Me.DataGridView1.CurrentRow.Cells(2).Value.ToString)
         adxplay()
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        If DataGridView1.Rows.Count = 0 Then
+            MsgBox("Nada que exportar", MsgBoxStyle.Exclamation)
+            Exit Sub
+        End If
+
+        Dim save_csv As New System.Windows.Forms.SaveFileDialog
+        save_csv.Filter = "CSV File |*.csv" + "|All Files|*.*"
+        If save_csv.ShowDialog() = Windows.Forms.DialogResult.OK Then
+
+            Dim QueueHdr = (From header As DataGridViewColumn In DataGridView1.Columns.Cast(Of DataGridViewColumn)()
+                            Select header.HeaderText).ToArray
+
+            Dim QueueRows = From row As DataGridViewRow In DataGridView1.Rows.Cast(Of DataGridViewRow)()
+                            Where Not row.IsNewRow
+                            Select Array.ConvertAll(row.Cells.Cast(Of DataGridViewCell).ToArray, Function(c) If(c.Value IsNot Nothing, c.Value.ToString, ""))
+
+            Using sw As New IO.StreamWriter(save_csv.FileName)
+
+                sw.WriteLine(String.Join(",", QueueHdr))
+                For Each r In QueueRows
+                    sw.WriteLine(String.Join(",", r))
+                Next
+
+            End Using
+
+
+
+            MsgBox("OK", MsgBoxStyle.Information)
+        End If
+
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Dim open_csv As New System.Windows.Forms.OpenFileDialog
+        open_csv.Filter = "CSV File |*.csv" + "|All Files|*.*"
+        If open_csv.ShowDialog() = Windows.Forms.DialogResult.OK Then
+
+            GuardarToolStripMenuItem.Enabled = True
+            GuardarComoToolStripMenuItem.Enabled = True
+            GroupBox1.Enabled = True
+            GroupBox3.Enabled = True
+            GroupBox4.Enabled = True
+            DataGridView1.Enabled = True
+            BtnBorrar.Enabled = True
+            BtnBorrartodo.Enabled = True
+            DataGridView1.Rows.Clear()
+
+            Using fielRead As New StreamReader(open_csv.FileName)
+                Dim line As String = fielRead.ReadLine
+                Do While (Not line Is Nothing)
+
+                    Dim partes As String() = line.Split(","c) ' se establece el separador 
+                    line = fielRead.ReadLine
+                    If (partes(0) = "ID") Then
+                    Else
+
+                        DataGridView1.Rows.Add(partes(0), partes(1), partes(2), True)
+                    End If
+                Loop
+
+            End Using
+            MsgBox("OK", MsgBoxStyle.Information)
+        End If
+
     End Sub
 End Class
