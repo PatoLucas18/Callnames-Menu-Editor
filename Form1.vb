@@ -772,7 +772,60 @@ Public Class Form1
 
     End Sub
 
+    Private Function Find(ByVal StrSearchString As String) As Boolean
+
+        DataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect
+
+        Dim intcount As Integer = 0
+        For Each Row As DataGridViewRow In DataGridView1.Rows
+            If DataGridView1.Rows(intcount).Cells(0).Value.ToString = StrSearchString Then
+                DataGridView1.Rows(intcount).Selected = True
+                Find = True
+                Exit Function
+            End If
+            intcount += 1
+        Next Row
+        Find = False
+    End Function
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+
+        'DataGridView1.Rows.Insert(2, 2, 2, True)
+        'Exit Sub
+        'Dim open_csv As New System.Windows.Forms.OpenFileDialog
+        'open_csv.Filter = "CSV File |*.csv" + "|All Files|*.*"
+        'If open_csv.ShowDialog() = Windows.Forms.DialogResult.OK Then
+
+        '    GuardarToolStripMenuItem.Enabled = True
+        '    GuardarComoToolStripMenuItem.Enabled = True
+        '    GroupBox1.Enabled = True
+        '    GroupBox3.Enabled = True
+        '    GroupBox4.Enabled = True
+        '    DataGridView1.Enabled = True
+        '    BtnBorrar.Enabled = True
+        '    BtnBorrartodo.Enabled = True
+        '    DataGridView1.Rows.Clear()
+
+        '    Using fielRead As New StreamReader(open_csv.FileName)
+        '        Dim line As String = fielRead.ReadLine
+        '        Do While (Not line Is Nothing)
+
+        '            Dim partes As String() = line.Split(","c) ' se establece el separador 
+        '            line = fielRead.ReadLine
+        '            If (partes(0) = "ID") Then
+        '            Else
+
+        '                'DataGridView1.Rows(1).Cells(0).Value = "ID"
+        '                'DataGridView1.Rows(1).Cells(1).Value = "Nombre"
+        '                'DataGridView1.Rows(1).Cells(2).Value = "unknow"
+
+        '                DataGridView1.Rows.Add(partes(0), partes(1), partes(2), True)
+        '            End If
+        '        Loop
+
+        '    End Using
+        '    MsgBox("OK", MsgBoxStyle.Information)
+        'End If
+
         Dim open_csv As New System.Windows.Forms.OpenFileDialog
         open_csv.Filter = "CSV File |*.csv" + "|All Files|*.*"
         If open_csv.ShowDialog() = Windows.Forms.DialogResult.OK Then
@@ -785,24 +838,37 @@ Public Class Form1
             DataGridView1.Enabled = True
             BtnBorrar.Enabled = True
             BtnBorrartodo.Enabled = True
-            DataGridView1.Rows.Clear()
+            'DataGridView1.Rows.Clear()
 
             Using fielRead As New StreamReader(open_csv.FileName)
                 Dim line As String = fielRead.ReadLine
-                Do While (Not line Is Nothing)
 
+                Do While (Not line Is Nothing)
                     Dim partes As String() = line.Split(","c) ' se establece el separador 
                     line = fielRead.ReadLine
-                    If (partes(0) = "ID") Then
+
+                    If Not IsNumeric(partes(0)) Then
                     Else
+                        Dim index As Integer = partes(0) - 1
 
-                        DataGridView1.Rows.Add(partes(0), partes(1), partes(2), True)
+                        If partes(0) > DataGridView1.Rows.Count Then
+                            DataGridView1.Rows.Add(DataGridView1.Rows.Count + 1, partes(1), partes(2), True)
+                        Else
+                            DataGridView1.Rows(index).Cells(1).Value = partes(1)
+                            DataGridView1.Rows(index).Cells(2).Value = partes(2)
+                        End If
+
+
                     End If
+                    'MsgBox(line)
                 Loop
-
             End Using
             MsgBox("OK", MsgBoxStyle.Information)
-        End If
 
+            'Actualizar id
+            'For ix = 1 To DataGridView1.Rows.Count
+            '    DataGridView1.Rows(ix - 1).Cells(0).Value = ix
+            'Next
+        End If
     End Sub
 End Class
