@@ -117,53 +117,173 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="Column3.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Column1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Column2.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Column3.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Column1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Column2.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="OFD.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="SFD.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>93, 17</value>
-  </metadata>
-  <metadata name="MenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>166, 17</value>
-  </metadata>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="BtnBorrartodo.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="Btnplay.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsKAAALCgG/Q2ZTAAADGElE
-        QVRoQ93aS8hMYRzH8TEWLrktFHZyLQlFFi47ygILKyQlS7JxKUpsREKkLAgRWbmV60pEoiyEWEhIZIHI
-        /f79nzln3jNnfjPnOWfOzJyZxeftnf+c8/8/z/uey/M85xQKhWJWxmMZ9uAS7uEZXvrsd4tdwC4sxVio
-        XCnIoLMx2Ig7+IF/CX3HLazDSKgajmQw1hQcw2eoBqbxEUcxGapmDBmsaTgOIM1f39U37MVQqDbUIIPS
-        IjyHKt4MTzEfqi2CDFbohe1QxVphC1S7ImSwrC9OQRVoJTt3ekO10SeDHuvEeajE7XASdTojgx7bUSVs
-        p0NQbYUMeselSpQHGyDaXB2ci79QSfLgN2Yh0u7KwCDYZU8lyJOH6I9Q2ys+pLrMXsRU7MYXP9YKmxFq
-        e8+HUUgz5NiEIMcEHIf9+9W2WfqAEfBr9zRiH9QOcbYinMfMgI2A1fZZ2ga/ZukXG9e8g9o4jupIYAFu
-        Q+2Xhdew85papYIroTZ0Ua8jhh/F5XgMtX+jloA6pWKX/WAacR0JDMBavILKk9ZpkL90WL33g2m4diQw
-        DDtg8w+VL6m3GGyJ54SCaSTtSMBmlwfxEypvEjMtod3y1Zeu0nYkMA1noHK7WmWJDkeCSTXakYANja5D
-        1Yiz3xJcjQSTyqojgcW4D1WrlrO2o62AqC9dZd0R0wer4Tq1vmE7PYgEk2pGRwJcjYrXoOqG3bWN89yR
-        IXDuSB4PrX5YgxdQNaO8QytPJ7ut2NhSqs03VK1avJM9L5ffebgJVSOOd/lt9w1xOs5B5Xbl3RDbNUQZ
-        hyP4BZU3CW+IYoNGm22pDVwk7YjN6nbiE1S+pMqDRtOKYfxArMcbqDxplYfxppkTK1sdXIEnUPs3qmJi
-        1ayp7kJws5L7ZaFqqmuyXHyYjStQ22epavHBZLEcNBEn8Adq2yzVXA4yaRbobNnH7gX2lCkXC3SmU5ZM
-        H6HukqnpikXsQFc8Vgh0xYMe0zWP3kxXPAwNdMXj6bCOf2EgrBWvcHxFU1/hCGvmSzWToGrGkEFno9HR
-        rzkpbXzxrFj4D8Q3WwKwkEo8AAAAAElFTkSuQmCC
-</value>
+  <data name="GroupBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>266, 67</value>
+  </data>
+  <data name="&gt;&gt;TBNombre.Name" xml:space="preserve">
+    <value>TBNombre</value>
+  </data>
+  <data name="DataGridView1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 27</value>
+  </data>
+  <data name="Btnplay2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>163, 22</value>
+  </data>
+  <data name="BtnBorrartodo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 27</value>
+  </data>
+  <data name="&gt;&gt;LanguageToolStripMenuItem.Name" xml:space="preserve">
+    <value>LanguageToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;DataGridView1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="LanguageToolStripMenuItem.Text" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="&gt;&gt;BtnBorrar.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="Btnplay.Location" type="System.Drawing.Point, System.Drawing">
+    <value>152, 16</value>
+  </data>
+  <data name="MenuStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="BtnADX.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="OFD.Filter" xml:space="preserve">
+    <value>Bin Files|*.bin</value>
+  </data>
+  <data name="BtnStop2.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="&gt;&gt;GroupBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Btnplay2.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="GroupBox2.Text" xml:space="preserve">
+    <value>CSV</value>
+  </data>
+  <data name="Btnplay2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="GroupBox3.TabIndex" type="System.Int32, mscorlib">
+    <value>79</value>
+  </data>
+  <data name="BtnBorrartodo.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="&gt;&gt;DataGridView1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Button3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 27</value>
+  </data>
+  <data name="&gt;&gt;GroupBox3.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="Btnstop.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="&gt;&gt;BtnStop2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="Btnplay.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="TextBoxBuscar.MaxLength" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="GroupBox4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>413, 145</value>
+  </data>
+  <data name="BtnxSound.TabIndex" type="System.Int32, mscorlib">
+    <value>82</value>
+  </data>
+  <data name="&gt;&gt;OFDs_sound.Type" xml:space="preserve">
+    <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TextBoxBuscar.Name" xml:space="preserve">
+    <value>TextBoxBuscar</value>
+  </data>
+  <data name="&gt;&gt;MenuStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BtnADX.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;BtnAgregar.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="GroupBox5.TabIndex" type="System.Int32, mscorlib">
+    <value>81</value>
+  </data>
+  <data name="Button3.Text" xml:space="preserve">
+    <value>Exportar</value>
+  </data>
+  <data name="&gt;&gt;Btnstop.Name" xml:space="preserve">
+    <value>Btnstop</value>
+  </data>
+  <data name="Button2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 27</value>
+  </data>
+  <data name="&gt;&gt;Button2.Name" xml:space="preserve">
+    <value>Button2</value>
+  </data>
+  <data name="&gt;&gt;BtnBorrartodo.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;Label2.Name" xml:space="preserve">
+    <value>Label2</value>
+  </data>
+  <data name="BtnADX.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 22</value>
+  </data>
+  <data name="BtnBorrartodo.TabIndex" type="System.Int32, mscorlib">
+    <value>77</value>
+  </data>
+  <data name="Button3.TabIndex" type="System.Int32, mscorlib">
+    <value>77</value>
+  </data>
+  <data name="&gt;&gt;BtnStop2.Name" xml:space="preserve">
+    <value>BtnStop2</value>
+  </data>
+  <data name="Button3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="&gt;&gt;Button3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;NUDCallname.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TBNombre.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="MenuStrip1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 2, 0, 2</value>
+  </data>
+  <data name="Label2.TabIndex" type="System.Int32, mscorlib">
+    <value>74</value>
+  </data>
+  <data name="&gt;&gt;Label2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="Btnstop.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 35</value>
   </data>
   <data name="Btnstop.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -183,6 +303,452 @@
         DWLDwDqoWgQZLGVbOPahnw00vrItHBXvv8hgT6O1qcYuu51pRxUy6K2ObU4PsBULoMbwJIN9KW48s2sW
         d+OZPbaiz2MP1qCmjWdx9A8R1rtEjJz0dQAAAABJRU5ErkJggg==
 </value>
+  </data>
+  <data name="&gt;&gt;TBNombre.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;Btnplay2.Name" xml:space="preserve">
+    <value>Btnplay2</value>
+  </data>
+  <data name="GroupBox5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>266, 60</value>
+  </data>
+  <data name="BtnStop2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>198, 22</value>
+  </data>
+  <data name="&gt;&gt;EspañolToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="GroupBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>75</value>
+  </data>
+  <data name="&gt;&gt;GroupBox3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="GroupBox4.Text" xml:space="preserve">
+    <value>Callname Seleccionado</value>
+  </data>
+  <data name="&gt;&gt;GroupBox3.Name" xml:space="preserve">
+    <value>GroupBox3</value>
+  </data>
+  <data name="Btnplay2.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="&gt;&gt;NUDCallname.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="Column1.Width" type="System.Int32, mscorlib">
+    <value>200</value>
+  </data>
+  <data name="BtnAgregar.Text" xml:space="preserve">
+    <value>Ok</value>
+  </data>
+  <data name="&gt;&gt;GroupBox4.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="NUDCallname.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 23</value>
+  </data>
+  <data name="GuardarToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+S</value>
+  </data>
+  <data name="Label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;BtnADX.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Column2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BtnStop2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsKAAALCgG/Q2ZTAAAC40lE
+        QVRoQ93auavUUBTH8RgQl0pFQQQRLQRF0F7xL7AROwsVsRAbS0sFC7UQsdDCDbFzAQvFDRUXUBSXQlBs
+        3MAFBBUXcMHlezLJvJvMLzM3Y96bOyk+vJnz5uSe8+bN5ObmRlEU12U+VmM3zuI+nuFV6jke4gL2Yi0W
+        YhzU8SqSQW/zsAW38R1/K/oJa24brCk1hicZ7GkJjuILVIH9sD/EKSyDGrMHGSw1E/vxA6qYOvzBMdi7
+        rWooIYPSKryEGnw0vMd6qFoEGcyxD+MuqMHGwgFMgKrNIYNtk3ECaoCxdAnToGpMyWDCmjgHdeBBuIOp
+        ULVCBpN/p+NQBxykK5gEUbMMxjugDhSCIxA1dwZXQB0gJBtQqDsfmA6bTqjkkHzCXDi1554kcyCVGCL7
+        NnVqH3lic50q86U3uAr7ANrP/2XHeQE1lmIzgOXoaOQwVILyDoW3thYz8BRqTMVOD2lu68EsfIZ6sXIX
+        WW7dbOKoxlR+YRHIayVvhnphmXvIcut2GmrMMjtBXiv5Zhr0FVIjjzHeEmfjaxr0FVIj9qHn+iiKVzpB
+        XyE1YjZZ4vZC0EdojfCNG8UnC0EfoTVywxJvFYI+QmuEc08UPyoEfYTWCCfo1tqT+mU3oTXywRIb00gT
+        /rWYwDbjw/7EEpvw9XvNEptwQjxoiU2Yomy0RJs0fnOCPkJq5DcWZ8mc4uWLyoTUSHsabxpzYdWYS11z
+        COrFylvMgZtfB1tXq7L4cAZp7shBqi4HvUa2jFNc2umHHcfuM6qxFLsyXIqORswwLdDZIrtTe+7J0CyZ
+        fkTXJVMzDIvY4pZcRyAR8m0F+1ISNctgsDd6LmMiRM0ymAjt1tt1TIGqFTLYFsrN0Ivo0oSRwZxG3J52
+        DWLDwDqoWgQZLGVbOPahnw00vrItHBXvv8hgT6O1qcYuu51pRxUy6K2ObU4PsBULoMbwJIN9KW48s2sW
+        d+OZPbaiz2MP1qCmjWdx9A8R1rtEjJz0dQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="GroupBox5.Text" xml:space="preserve">
+    <value>Reproducir ADX (Archivo externo)</value>
+  </data>
+  <data name="&gt;&gt;Btnplay.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="BtnBorrar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 60</value>
+  </data>
+  <data name="BtnBorrar.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="GroupBox4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>266, 93</value>
+  </data>
+  <data name="&gt;&gt;BtnBorrar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GroupBox2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;Button2.Parent" xml:space="preserve">
+    <value>GroupBox2</value>
+  </data>
+  <data name="BtnBorrar.Text" xml:space="preserve">
+    <value>Borrar Seleccionado</value>
+  </data>
+  <data name="BtnBorrartodo.Text" xml:space="preserve">
+    <value>Borrar todo</value>
+  </data>
+  <data name="GuardarComoToolStripMenuItem.Text" xml:space="preserve">
+    <value>Guardar Como</value>
+  </data>
+  <data name="&gt;&gt;BtnxSound.Name" xml:space="preserve">
+    <value>BtnxSound</value>
+  </data>
+  <data name="Btnplay.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="BtnxSound.Text" xml:space="preserve">
+    <value>Sel. X_sound.afs</value>
+  </data>
+  <data name="&gt;&gt;GroupBox5.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="Btnplay2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 27</value>
+  </data>
+  <data name="&gt;&gt;GroupBox2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;GroupBox2.Name" xml:space="preserve">
+    <value>GroupBox2</value>
+  </data>
+  <data name="DataGridView1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>398, 540</value>
+  </data>
+  <data name="Column2.HeaderText" xml:space="preserve">
+    <value>unknow</value>
+  </data>
+  <data name="Btnplay.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="Label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 30</value>
+  </data>
+  <data name="&gt;&gt;AbrirToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MenuStrip1.Name" xml:space="preserve">
+    <value>MenuStrip1</value>
+  </data>
+  <data name="Label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 18</value>
+  </data>
+  <data name="GuardarComoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 20</value>
+  </data>
+  <data name="TextBoxBuscar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 24</value>
+  </data>
+  <data name="EspañolToolStripMenuItem.Text" xml:space="preserve">
+    <value>Spanish</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>688, 572</value>
+  </data>
+  <data name="DataGridView1.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;BtnxSound.Parent" xml:space="preserve">
+    <value>GroupBox4</value>
+  </data>
+  <data name="&gt;&gt;EnglishToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AbrirToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+O</value>
+  </data>
+  <data name="NUDCallname.TabIndex" type="System.Int32, mscorlib">
+    <value>72</value>
+  </data>
+  <data name="&gt;&gt;NUDCallname.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="&gt;&gt;Btnplay.Parent" xml:space="preserve">
+    <value>GroupBox4</value>
+  </data>
+  <data name="&gt;&gt;DataGridView1.Name" xml:space="preserve">
+    <value>DataGridView1</value>
+  </data>
+  <data name="&gt;&gt;TBNombre.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="MenuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>688, 24</value>
+  </data>
+  <data name="&gt;&gt;GuardarToolStripMenuItem.Name" xml:space="preserve">
+    <value>GuardarToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;GroupBox5.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="Column3.HeaderText" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="&gt;&gt;Button2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GuardarComoToolStripMenuItem.Name" xml:space="preserve">
+    <value>GuardarComoToolStripMenuItem</value>
+  </data>
+  <data name="GroupBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>266, 66</value>
+  </data>
+  <data name="BtnADX.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="&gt;&gt;BtnStop2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Button3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;Btnplay.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DataGridView1.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="AbrirToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 20</value>
+  </data>
+  <data name="GroupBox1.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;GroupBox4.Name" xml:space="preserve">
+    <value>GroupBox4</value>
+  </data>
+  <data name="&gt;&gt;Column2.Name" xml:space="preserve">
+    <value>Column2</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Form1</value>
+  </data>
+  <data name="&gt;&gt;BtnADX.Name" xml:space="preserve">
+    <value>BtnADX</value>
+  </data>
+  <data name="&gt;&gt;MenuStrip1.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;GroupBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;TextBoxBuscar.Parent" xml:space="preserve">
+    <value>GroupBox3</value>
+  </data>
+  <data name="&gt;&gt;NUDCallname.Name" xml:space="preserve">
+    <value>NUDCallname</value>
+  </data>
+  <data name="Btnstop.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;OFD.Name" xml:space="preserve">
+    <value>OFD</value>
+  </data>
+  <data name="EnglishToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 22</value>
+  </data>
+  <data name="BtnxSound.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 22</value>
+  </data>
+  <data name="Button2.Text" xml:space="preserve">
+    <value>Importar</value>
+  </data>
+  <data name="BtnADX.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 27</value>
+  </data>
+  <data name="BtnStop2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;Btnplay2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="GroupBox3.Text" xml:space="preserve">
+    <value>Buscar</value>
+  </data>
+  <data name="BtnBorrar.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;TextBoxBuscar.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="GroupBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>413, 336</value>
+  </data>
+  <data name="&gt;&gt;OFDs_sound.Name" xml:space="preserve">
+    <value>OFDs_sound</value>
+  </data>
+  <data name="Btnplay2.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="&gt;&gt;Btnstop.Parent" xml:space="preserve">
+    <value>GroupBox4</value>
+  </data>
+  <data name="Btnstop.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="NUDCallname.Location" type="System.Drawing.Point, System.Drawing">
+    <value>142, 53</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Callnames Menú editor</value>
+  </data>
+  <data name="OFDs_sound.Filter" xml:space="preserve">
+    <value>Afs files|*.afs</value>
+  </data>
+  <data name="Btnplay.TabIndex" type="System.Int32, mscorlib">
+    <value>84</value>
+  </data>
+  <data name="&gt;&gt;Column3.Name" xml:space="preserve">
+    <value>Column3</value>
+  </data>
+  <data name="&gt;&gt;AbrirToolStripMenuItem.Name" xml:space="preserve">
+    <value>AbrirToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;GroupBox4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;GroupBox1.Name" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="&gt;&gt;Label2.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="GroupBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>413, 264</value>
+  </data>
+  <data name="MenuStrip1.TabIndex" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="&gt;&gt;Column3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Btnplay.Name" xml:space="preserve">
+    <value>Btnplay</value>
+  </data>
+  <data name="Label2.Text" xml:space="preserve">
+    <value>
+Nombre                 unknow</value>
+  </data>
+  <data name="&gt;&gt;Column1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DataGridView1.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;GroupBox1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="BtnxSound.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 23</value>
+  </data>
+  <data name="&gt;&gt;Button3.Parent" xml:space="preserve">
+    <value>GroupBox2</value>
+  </data>
+  <data name="&gt;&gt;BtnAgregar.Name" xml:space="preserve">
+    <value>BtnAgregar</value>
+  </data>
+  <data name="BtnAgregar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>205, 53</value>
+  </data>
+  <data name="&gt;&gt;BtnBorrar.Name" xml:space="preserve">
+    <value>BtnBorrar</value>
+  </data>
+  <data name="&gt;&gt;Btnstop.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="GroupBox4.TabIndex" type="System.Int32, mscorlib">
+    <value>80</value>
+  </data>
+  <data name="&gt;&gt;BtnAgregar.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="BtnStop2.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="DataGridView1.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="GuardarToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 20</value>
+  </data>
+  <data name="TBNombre.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 52</value>
+  </data>
+  <data name="GuardarToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;Column1.Name" xml:space="preserve">
+    <value>Column1</value>
+  </data>
+  <data name="BtnBorrar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>141, 27</value>
+  </data>
+  <data name="&gt;&gt;SFD.Name" xml:space="preserve">
+    <value>SFD</value>
+  </data>
+  <data name="Column3.Width" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="&gt;&gt;Button3.Name" xml:space="preserve">
+    <value>Button3</value>
+  </data>
+  <data name="GroupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>266, 93</value>
+  </data>
+  <data name="BtnADX.Text" xml:space="preserve">
+    <value>Sel. adx...</value>
+  </data>
+  <data name="Btnplay.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;EspañolToolStripMenuItem.Name" xml:space="preserve">
+    <value>EspañolToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;BtnBorrartodo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Column1.HeaderText" xml:space="preserve">
+    <value>Nombres</value>
+  </data>
+  <data name="BtnAgregar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 23</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AbrirToolStripMenuItem.Text" xml:space="preserve">
+    <value>Abrir</value>
+  </data>
+  <data name="&gt;&gt;GuardarToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GroupBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BtnADX.Parent" xml:space="preserve">
+    <value>GroupBox5</value>
   </data>
   <data name="Btnplay2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -204,29 +770,237 @@
         rzkpbXzxrFj4D8Q3WwKwkEo8AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="BtnStop2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="EnglishToolStripMenuItem.Text" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="TBNombre.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 23</value>
+  </data>
+  <data name="&gt;&gt;Timer1.Name" xml:space="preserve">
+    <value>Timer1</value>
+  </data>
+  <data name="GroupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>413, 27</value>
+  </data>
+  <data name="Btnplay.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 35</value>
+  </data>
+  <data name="GuardarToolStripMenuItem.Text" xml:space="preserve">
+    <value>Guardar</value>
+  </data>
+  <data name="BtnxSound.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="&gt;&gt;TextBoxBuscar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BtnStop2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 27</value>
+  </data>
+  <data name="&gt;&gt;MenuStrip1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="TBNombre.MaxLength" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="&gt;&gt;BtnStop2.Parent" xml:space="preserve">
+    <value>GroupBox5</value>
+  </data>
+  <data name="GroupBox3.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 15</value>
+  </data>
+  <data name="BtnStop2.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="Button2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 22</value>
+  </data>
+  <data name="SFD.Filter" xml:space="preserve">
+    <value>Bin Files|*.bin</value>
+  </data>
+  <data name="TBNombre.TabIndex" type="System.Int32, mscorlib">
+    <value>73</value>
+  </data>
+  <data name="OFDs_sound.Title" xml:space="preserve">
+    <value>Seleccionar Ejecutabel PES6 o WE9</value>
+  </data>
+  <data name="GroupBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>85</value>
+  </data>
+  <data name="&gt;&gt;BtnAgregar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BtnxSound.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;BtnBorrartodo.Parent" xml:space="preserve">
+    <value>GroupBox4</value>
+  </data>
+  <data name="Btnplay.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         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
-        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
+        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
 </value>
+  </data>
+  <data name="Button2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="&gt;&gt;Button2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="GuardarComoToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+Shift+S</value>
+  </data>
+  <data name="Button3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>135, 22</value>
+  </data>
+  <data name="&gt;&gt;GuardarComoToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GroupBox4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Btnplay2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;LanguageToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GroupBox5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BtnxSound.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BtnxSound.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;BtnBorrartodo.Name" xml:space="preserve">
+    <value>BtnBorrartodo</value>
+  </data>
+  <data name="BtnADX.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;Btnstop.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;Timer1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BtnBorrar.Parent" xml:space="preserve">
+    <value>GroupBox4</value>
+  </data>
+  <data name="Button2.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="Btnstop.Location" type="System.Drawing.Point, System.Drawing">
+    <value>195, 16</value>
+  </data>
+  <data name="GroupBox5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>413, 453</value>
+  </data>
+  <data name="&gt;&gt;Btnplay2.Parent" xml:space="preserve">
+    <value>GroupBox5</value>
+  </data>
+  <data name="LanguageToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 20</value>
+  </data>
+  <data name="Btnstop.TabIndex" type="System.Int32, mscorlib">
+    <value>83</value>
+  </data>
+  <data name="Btnstop.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="BtnBorrartodo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>159, 60</value>
+  </data>
+  <data name="&gt;&gt;OFD.Type" xml:space="preserve">
+    <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="MenuStrip1.Text" xml:space="preserve">
+    <value>MenuStrip1</value>
+  </data>
+  <data name="BtnAgregar.TabIndex" type="System.Int32, mscorlib">
+    <value>71</value>
+  </data>
+  <data name="&gt;&gt;Label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="TextBoxBuscar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>234, 23</value>
+  </data>
+  <data name="&gt;&gt;GroupBox3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;SFD.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SaveFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="TextBoxBuscar.TabIndex" type="System.Int32, mscorlib">
+    <value>75</value>
+  </data>
+  <data name="EspañolToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 22</value>
+  </data>
+  <data name="BtnBorrar.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="GuardarComoToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="GroupBox1.Text" xml:space="preserve">
+    <value>Agregar Callnames</value>
+  </data>
+  <data name="&gt;&gt;EnglishToolStripMenuItem.Name" xml:space="preserve">
+    <value>EnglishToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;GroupBox5.Name" xml:space="preserve">
+    <value>GroupBox5</value>
   </data>
   <metadata name="OFDs_sound.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>267, 19</value>
   </metadata>
+  <metadata name="OFD.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>en</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="MenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>166, 17</value>
+  </metadata>
+  <metadata name="Column2.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column3.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="SFD.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>93, 17</value>
+  </metadata>
   <metadata name="Timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>371, 20</value>
+  </metadata>
+  <metadata name="Column1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
   </metadata>
 </root>

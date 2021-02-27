@@ -71,343 +71,233 @@ Partial Class Form1
         '
         'DataGridView1
         '
+        resources.ApplyResources(Me.DataGridView1, "DataGridView1")
         Me.DataGridView1.AllowUserToAddRows = False
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column3, Me.Column1, Me.Column2})
-        Me.DataGridView1.Enabled = False
-        Me.DataGridView1.Location = New System.Drawing.Point(7, 27)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.RowHeadersWidth = 30
-        Me.DataGridView1.Size = New System.Drawing.Size(397, 540)
-        Me.DataGridView1.TabIndex = 8
         '
         'Column3
         '
-        Me.Column3.HeaderText = "ID"
+        resources.ApplyResources(Me.Column3, "Column3")
         Me.Column3.Name = "Column3"
-        Me.Column3.Width = 50
         '
         'Column1
         '
         Me.Column1.FillWeight = 200.0!
-        Me.Column1.HeaderText = "Nombres"
+        resources.ApplyResources(Me.Column1, "Column1")
         Me.Column1.Name = "Column1"
-        Me.Column1.Width = 200
         '
         'Column2
         '
-        Me.Column2.HeaderText = "unknow"
+        resources.ApplyResources(Me.Column2, "Column2")
         Me.Column2.Name = "Column2"
         '
         'OFD
         '
-        Me.OFD.Filter = "Bin Files|*.bin"
+        resources.ApplyResources(Me.OFD, "OFD")
         '
         'SFD
         '
-        Me.SFD.Filter = "Bin Files|*.bin"
+        resources.ApplyResources(Me.SFD, "SFD")
         '
         'BtnBorrar
         '
-        Me.BtnBorrar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.BtnBorrar.Enabled = False
-        Me.BtnBorrar.Location = New System.Drawing.Point(7, 60)
+        resources.ApplyResources(Me.BtnBorrar, "BtnBorrar")
         Me.BtnBorrar.Name = "BtnBorrar"
-        Me.BtnBorrar.Size = New System.Drawing.Size(141, 27)
-        Me.BtnBorrar.TabIndex = 4
-        Me.BtnBorrar.Text = "Borrar Seleccionado"
         Me.BtnBorrar.UseVisualStyleBackColor = True
         '
         'MenuStrip1
         '
+        resources.ApplyResources(Me.MenuStrip1, "MenuStrip1")
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AbrirToolStripMenuItem, Me.GuardarToolStripMenuItem, Me.GuardarComoToolStripMenuItem, Me.LanguageToolStripMenuItem})
-        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(7, 2, 0, 2)
-        Me.MenuStrip1.Size = New System.Drawing.Size(688, 24)
-        Me.MenuStrip1.TabIndex = 70
-        Me.MenuStrip1.Text = "MenuStrip1"
         '
         'AbrirToolStripMenuItem
         '
+        resources.ApplyResources(Me.AbrirToolStripMenuItem, "AbrirToolStripMenuItem")
         Me.AbrirToolStripMenuItem.Name = "AbrirToolStripMenuItem"
-        Me.AbrirToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.O), System.Windows.Forms.Keys)
-        Me.AbrirToolStripMenuItem.Size = New System.Drawing.Size(45, 20)
-        Me.AbrirToolStripMenuItem.Text = "Abrir"
         '
         'GuardarToolStripMenuItem
         '
-        Me.GuardarToolStripMenuItem.Enabled = False
+        resources.ApplyResources(Me.GuardarToolStripMenuItem, "GuardarToolStripMenuItem")
         Me.GuardarToolStripMenuItem.Name = "GuardarToolStripMenuItem"
-        Me.GuardarToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.S), System.Windows.Forms.Keys)
-        Me.GuardarToolStripMenuItem.Size = New System.Drawing.Size(61, 20)
-        Me.GuardarToolStripMenuItem.Text = "Guardar"
         '
         'GuardarComoToolStripMenuItem
         '
-        Me.GuardarComoToolStripMenuItem.Enabled = False
+        resources.ApplyResources(Me.GuardarComoToolStripMenuItem, "GuardarComoToolStripMenuItem")
         Me.GuardarComoToolStripMenuItem.Name = "GuardarComoToolStripMenuItem"
-        Me.GuardarComoToolStripMenuItem.ShortcutKeys = CType(((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.Shift) _
-            Or System.Windows.Forms.Keys.S), System.Windows.Forms.Keys)
-        Me.GuardarComoToolStripMenuItem.Size = New System.Drawing.Size(97, 20)
-        Me.GuardarComoToolStripMenuItem.Text = "Guardar Como"
         '
         'LanguageToolStripMenuItem
         '
+        resources.ApplyResources(Me.LanguageToolStripMenuItem, "LanguageToolStripMenuItem")
         Me.LanguageToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
         Me.LanguageToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EspañolToolStripMenuItem, Me.EnglishToolStripMenuItem})
         Me.LanguageToolStripMenuItem.Name = "LanguageToolStripMenuItem"
-        Me.LanguageToolStripMenuItem.Size = New System.Drawing.Size(71, 20)
-        Me.LanguageToolStripMenuItem.Text = "Language"
         '
         'EspañolToolStripMenuItem
         '
+        resources.ApplyResources(Me.EspañolToolStripMenuItem, "EspañolToolStripMenuItem")
         Me.EspañolToolStripMenuItem.Checked = True
         Me.EspañolToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked
         Me.EspañolToolStripMenuItem.Name = "EspañolToolStripMenuItem"
-        Me.EspañolToolStripMenuItem.Size = New System.Drawing.Size(115, 22)
-        Me.EspañolToolStripMenuItem.Text = "Español"
         '
         'EnglishToolStripMenuItem
         '
+        resources.ApplyResources(Me.EnglishToolStripMenuItem, "EnglishToolStripMenuItem")
         Me.EnglishToolStripMenuItem.Name = "EnglishToolStripMenuItem"
-        Me.EnglishToolStripMenuItem.Size = New System.Drawing.Size(115, 22)
-        Me.EnglishToolStripMenuItem.Text = "English"
         '
         'BtnAgregar
         '
-        Me.BtnAgregar.Location = New System.Drawing.Point(205, 53)
+        resources.ApplyResources(Me.BtnAgregar, "BtnAgregar")
         Me.BtnAgregar.Name = "BtnAgregar"
-        Me.BtnAgregar.Size = New System.Drawing.Size(43, 23)
-        Me.BtnAgregar.TabIndex = 71
-        Me.BtnAgregar.Text = "Ok"
         Me.BtnAgregar.UseVisualStyleBackColor = True
         '
         'NUDCallname
         '
-        Me.NUDCallname.Location = New System.Drawing.Point(142, 53)
+        resources.ApplyResources(Me.NUDCallname, "NUDCallname")
         Me.NUDCallname.Maximum = New Decimal(New Integer() {100000, 0, 0, 0})
         Me.NUDCallname.Name = "NUDCallname"
-        Me.NUDCallname.Size = New System.Drawing.Size(59, 23)
-        Me.NUDCallname.TabIndex = 72
         '
         'TBNombre
         '
-        Me.TBNombre.Location = New System.Drawing.Point(7, 52)
-        Me.TBNombre.MaxLength = 40
+        resources.ApplyResources(Me.TBNombre, "TBNombre")
         Me.TBNombre.Name = "TBNombre"
-        Me.TBNombre.Size = New System.Drawing.Size(128, 23)
-        Me.TBNombre.TabIndex = 73
         '
         'Label2
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(7, 18)
+        resources.ApplyResources(Me.Label2, "Label2")
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(145, 30)
-        Me.Label2.TabIndex = 74
-        Me.Label2.Text = "" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Nombre                 unknow"
         '
         'GroupBox1
         '
+        resources.ApplyResources(Me.GroupBox1, "GroupBox1")
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.BtnAgregar)
         Me.GroupBox1.Controls.Add(Me.TBNombre)
         Me.GroupBox1.Controls.Add(Me.NUDCallname)
-        Me.GroupBox1.Enabled = False
         Me.GroupBox1.ForeColor = System.Drawing.Color.Black
-        Me.GroupBox1.Location = New System.Drawing.Point(413, 27)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(266, 93)
-        Me.GroupBox1.TabIndex = 75
         Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Agregar Callnames"
         '
         'BtnBorrartodo
         '
-        Me.BtnBorrartodo.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.BtnBorrartodo.Enabled = False
-        Me.BtnBorrartodo.Location = New System.Drawing.Point(159, 60)
+        resources.ApplyResources(Me.BtnBorrartodo, "BtnBorrartodo")
         Me.BtnBorrartodo.Name = "BtnBorrartodo"
-        Me.BtnBorrartodo.Size = New System.Drawing.Size(90, 27)
-        Me.BtnBorrartodo.TabIndex = 77
-        Me.BtnBorrartodo.Text = "Borrar todo"
         Me.BtnBorrartodo.UseVisualStyleBackColor = True
         '
         'TextBoxBuscar
         '
-        Me.TextBoxBuscar.Location = New System.Drawing.Point(14, 24)
-        Me.TextBoxBuscar.MaxLength = 40
+        resources.ApplyResources(Me.TextBoxBuscar, "TextBoxBuscar")
         Me.TextBoxBuscar.Name = "TextBoxBuscar"
-        Me.TextBoxBuscar.Size = New System.Drawing.Size(234, 23)
-        Me.TextBoxBuscar.TabIndex = 75
         '
         'GroupBox3
         '
+        resources.ApplyResources(Me.GroupBox3, "GroupBox3")
         Me.GroupBox3.Controls.Add(Me.TextBoxBuscar)
-        Me.GroupBox3.Enabled = False
         Me.GroupBox3.ForeColor = System.Drawing.Color.Black
-        Me.GroupBox3.Location = New System.Drawing.Point(413, 264)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(266, 66)
-        Me.GroupBox3.TabIndex = 79
         Me.GroupBox3.TabStop = False
-        Me.GroupBox3.Text = "Buscar"
         '
         'BtnxSound
         '
+        resources.ApplyResources(Me.BtnxSound, "BtnxSound")
         Me.BtnxSound.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.BtnxSound.FlatAppearance.BorderSize = 0
         Me.BtnxSound.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
-        Me.BtnxSound.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnxSound.ForeColor = System.Drawing.Color.White
-        Me.BtnxSound.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.BtnxSound.Location = New System.Drawing.Point(10, 22)
         Me.BtnxSound.Name = "BtnxSound"
-        Me.BtnxSound.Size = New System.Drawing.Size(121, 23)
-        Me.BtnxSound.TabIndex = 82
-        Me.BtnxSound.Text = "Sel. X_sound.afs"
         Me.BtnxSound.UseVisualStyleBackColor = False
         '
         'Btnplay
         '
-        Me.Btnplay.BackgroundImage = CType(resources.GetObject("Btnplay.BackgroundImage"), System.Drawing.Image)
-        Me.Btnplay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Btnplay.Enabled = False
+        resources.ApplyResources(Me.Btnplay, "Btnplay")
         Me.Btnplay.FlatAppearance.BorderSize = 0
-        Me.Btnplay.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Btnplay.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Btnplay.Location = New System.Drawing.Point(152, 16)
         Me.Btnplay.Name = "Btnplay"
-        Me.Btnplay.Size = New System.Drawing.Size(35, 35)
-        Me.Btnplay.TabIndex = 84
         Me.Btnplay.UseVisualStyleBackColor = True
         '
         'Btnstop
         '
-        Me.Btnstop.BackgroundImage = CType(resources.GetObject("Btnstop.BackgroundImage"), System.Drawing.Image)
-        Me.Btnstop.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Btnstop.Enabled = False
+        resources.ApplyResources(Me.Btnstop, "Btnstop")
         Me.Btnstop.FlatAppearance.BorderSize = 0
-        Me.Btnstop.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Btnstop.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Btnstop.Location = New System.Drawing.Point(195, 16)
         Me.Btnstop.Name = "Btnstop"
-        Me.Btnstop.Size = New System.Drawing.Size(35, 35)
-        Me.Btnstop.TabIndex = 83
         Me.Btnstop.UseVisualStyleBackColor = True
         '
         'GroupBox5
         '
+        resources.ApplyResources(Me.GroupBox5, "GroupBox5")
         Me.GroupBox5.Controls.Add(Me.BtnADX)
         Me.GroupBox5.Controls.Add(Me.Btnplay2)
         Me.GroupBox5.Controls.Add(Me.BtnStop2)
         Me.GroupBox5.ForeColor = System.Drawing.Color.Black
-        Me.GroupBox5.Location = New System.Drawing.Point(413, 453)
         Me.GroupBox5.Name = "GroupBox5"
-        Me.GroupBox5.Size = New System.Drawing.Size(266, 60)
-        Me.GroupBox5.TabIndex = 81
         Me.GroupBox5.TabStop = False
-        Me.GroupBox5.Text = "Reproducir ADX (Archivo externo)"
         '
         'BtnADX
         '
+        resources.ApplyResources(Me.BtnADX, "BtnADX")
         Me.BtnADX.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.BtnADX.FlatAppearance.BorderSize = 0
         Me.BtnADX.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
-        Me.BtnADX.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnADX.ForeColor = System.Drawing.Color.White
-        Me.BtnADX.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.BtnADX.Location = New System.Drawing.Point(10, 22)
         Me.BtnADX.Name = "BtnADX"
-        Me.BtnADX.Size = New System.Drawing.Size(125, 27)
-        Me.BtnADX.TabIndex = 22
-        Me.BtnADX.Text = "Sel. adx..."
         Me.BtnADX.UseVisualStyleBackColor = False
         '
         'Btnplay2
         '
-        Me.Btnplay2.BackgroundImage = CType(resources.GetObject("Btnplay2.BackgroundImage"), System.Drawing.Image)
-        Me.Btnplay2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        resources.ApplyResources(Me.Btnplay2, "Btnplay2")
         Me.Btnplay2.FlatAppearance.BorderSize = 0
-        Me.Btnplay2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Btnplay2.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Btnplay2.Location = New System.Drawing.Point(163, 22)
         Me.Btnplay2.Name = "Btnplay2"
-        Me.Btnplay2.Size = New System.Drawing.Size(27, 27)
-        Me.Btnplay2.TabIndex = 24
         Me.Btnplay2.UseVisualStyleBackColor = True
         '
         'BtnStop2
         '
-        Me.BtnStop2.BackgroundImage = CType(resources.GetObject("BtnStop2.BackgroundImage"), System.Drawing.Image)
-        Me.BtnStop2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        resources.ApplyResources(Me.BtnStop2, "BtnStop2")
         Me.BtnStop2.FlatAppearance.BorderSize = 0
-        Me.BtnStop2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnStop2.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.BtnStop2.Location = New System.Drawing.Point(198, 22)
         Me.BtnStop2.Name = "BtnStop2"
-        Me.BtnStop2.Size = New System.Drawing.Size(27, 27)
-        Me.BtnStop2.TabIndex = 23
         Me.BtnStop2.UseVisualStyleBackColor = True
         '
         'GroupBox4
         '
+        resources.ApplyResources(Me.GroupBox4, "GroupBox4")
         Me.GroupBox4.Controls.Add(Me.BtnxSound)
         Me.GroupBox4.Controls.Add(Me.BtnBorrar)
         Me.GroupBox4.Controls.Add(Me.BtnBorrartodo)
         Me.GroupBox4.Controls.Add(Me.Btnplay)
         Me.GroupBox4.Controls.Add(Me.Btnstop)
         Me.GroupBox4.ForeColor = System.Drawing.Color.Black
-        Me.GroupBox4.Location = New System.Drawing.Point(413, 145)
         Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(266, 93)
-        Me.GroupBox4.TabIndex = 80
         Me.GroupBox4.TabStop = False
-        Me.GroupBox4.Text = "Callname Seleccionado"
         '
         'OFDs_sound
         '
-        Me.OFDs_sound.Filter = "Afs files|*.afs"
-        Me.OFDs_sound.Title = "Seleccionar Ejecutabel PES6 o WE9"
+        resources.ApplyResources(Me.OFDs_sound, "OFDs_sound")
         '
         'GroupBox2
         '
+        resources.ApplyResources(Me.GroupBox2, "GroupBox2")
         Me.GroupBox2.Controls.Add(Me.Button2)
         Me.GroupBox2.Controls.Add(Me.Button3)
         Me.GroupBox2.ForeColor = System.Drawing.Color.Black
-        Me.GroupBox2.Location = New System.Drawing.Point(413, 336)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(266, 67)
-        Me.GroupBox2.TabIndex = 85
         Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "CSV"
         '
         'Button2
         '
-        Me.Button2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Button2.Location = New System.Drawing.Point(7, 22)
+        resources.ApplyResources(Me.Button2, "Button2")
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(125, 27)
-        Me.Button2.TabIndex = 4
-        Me.Button2.Text = "importar"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button3
         '
-        Me.Button3.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Button3.Location = New System.Drawing.Point(135, 22)
+        resources.ApplyResources(Me.Button3, "Button3")
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(125, 27)
-        Me.Button3.TabIndex = 77
-        Me.Button3.Text = "exportar"
         Me.Button3.UseVisualStyleBackColor = True
         '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
+        resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(688, 572)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox4)
         Me.Controls.Add(Me.GroupBox5)
@@ -415,11 +305,9 @@ Partial Class Form1
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.MenuStrip1)
-        Me.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MainMenuStrip = Me.MenuStrip1
         Me.MaximizeBox = False
         Me.Name = "Form1"
-        Me.Text = "Callnames Menú editor"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()

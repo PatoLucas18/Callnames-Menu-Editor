@@ -1,5 +1,8 @@
 ﻿Imports System.IO
 Imports System.Text
+Imports System.Threading
+Imports System.Globalization
+Imports System.ComponentModel
 
 Public Class Form1
 
@@ -61,7 +64,7 @@ Public Class Form1
                     Dim callnameN As Integer = br.ReadInt16()
                     DataGridView1.Rows.Add(NCall, value, callnameN, True)
                 End If
-                
+
             Next
             br.Close()
             fs.Close()
@@ -76,10 +79,11 @@ Public Class Form1
     ' Guardar Como el Archivo
     Private Sub GuardarComoToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles GuardarComoToolStripMenuItem.Click
         If SFD.ShowDialog = Windows.Forms.DialogResult.OK Then
-
+            ' Comprobar si existe el archivo abierto(para guardar como desde CSV)
             If File.Exists(OFD.FileName) Then
                 My.Computer.FileSystem.CopyFile(OFD.FileName, SFD.FileName, overwrite:=True)
             Else
+                ' Creamos una archivo bin base tipo pes6 (funciona en we9)
                 Dim b(304331) As Byte
                 File.WriteAllBytes(SFD.FileName, b)
 
@@ -613,7 +617,7 @@ Public Class Form1
             obtvalor = LCase(DataGridView1.Rows(i).Cells(1).Value.ToString) 'Se supone que las columnas son estáticas. 0 es la columna en la que deseo ralizar la búsqueda (Columna --> Nombre).
 
             Dim palabra1 As String = LCase(TextBoxBuscar.Text)  'convierto a minuscula para comparar
-            
+
             If (obtvalor.StartsWith(palabra1)) Then 'Aqui compara minusculas
                 DataGridView1.Rows(i).Cells(0).Selected = True
                 DataGridView1.CurrentCell = DataGridView1.Rows(i).Cells(0)
@@ -626,68 +630,57 @@ Public Class Form1
     End Sub
 #Region "Idiomas"
 
-    Private Sub English(ByVal English As Boolean)
-
-        Column1.HeaderText = "Player´s name"
-        GroupBox1.Text = "Add Callnames"
-        Label2.Text = "Name                  unknow"
-        BtnBorrar.Text = "Delete Selected"
-        BtnBorrartodo.Text = "Delete all"
-        GroupBox3.Text = "Search"
+    Private Sub English()
+        ChangeLanguage("en")
+        Column1.HeaderText = "Name"
         AbrirToolStripMenuItem.Text = "Open"
         GuardarToolStripMenuItem.Text = "Save"
         GuardarComoToolStripMenuItem.Text = "Save as"
-        LanguageToolStripMenuItem.Text = "Idioma"
-        GroupBox4.Text = "Selected Callname"
-        GroupBox5.Text = "Play external file ADX"
     End Sub
-    Private Sub Español(ByVal Español As Boolean)
-        Column1.HeaderText = "Nombre del Jugador"
-        GroupBox1.Text = "Agregar Callnames"
-        Label2.Text = "Nombre                 unknow"
-        BtnBorrar.Text = "Borrar Seleccionado"
-        BtnBorrartodo.Text = "Borrar todo"
-        GroupBox3.Text = "Buscar"
+    Private Sub Español()
+        ChangeLanguage("es")
+        Column1.HeaderText = "Nombre"
         AbrirToolStripMenuItem.Text = "Abrir"
         GuardarToolStripMenuItem.Text = "Guardar"
         GuardarComoToolStripMenuItem.Text = "Guardar como"
-        LanguageToolStripMenuItem.Text = "Language"
-        GroupBox4.Text = "Callname Seleccionado"
-        GroupBox5.Text = "Reproducir ADX Archivo externo"
     End Sub
-
+    Private Sub ChangeLanguage(ByVal Language As String) 'Localizable form
+        For Each c As Control In Me.Controls
+            Dim crmLang As ComponentResourceManager = New ComponentResourceManager(GetType(Form1))
+            crmLang.ApplyResources(c, c.Name, New CultureInfo(Language)) 'Set desired language
+            For Each c2 As Control In c.Controls
+                Dim crmLang2 As ComponentResourceManager = New ComponentResourceManager(GetType(Form1))
+                crmLang2.ApplyResources(c2, c2.Name, New CultureInfo(Language)) 'Set desired language
+            Next
+        Next
+    End Sub
     Private Sub EspañolToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles EspañolToolStripMenuItem.Click
-        Español(True)
+        Español()
         EspañolToolStripMenuItem.CheckState = CheckState.Checked
         EnglishToolStripMenuItem.CheckState = CheckState.Unchecked
-        My.Settings.ES = EspañolToolStripMenuItem.CheckState
-        My.Settings.EN = EnglishToolStripMenuItem.CheckState
-        My.Settings.Save()
     End Sub
     Private Sub EnglishToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles EnglishToolStripMenuItem.Click
-        English(True)
+        English()
         EnglishToolStripMenuItem.CheckState = CheckState.Checked
         EspañolToolStripMenuItem.CheckState = CheckState.Unchecked
-        My.Settings.ES = EspañolToolStripMenuItem.CheckState
-        My.Settings.EN = EnglishToolStripMenuItem.CheckState
-        My.Settings.Save()
     End Sub
 
 #End Region
     ' Cargar Formulario
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
-
-        'Cargar Idioma
-        EspañolToolStripMenuItem.CheckState = My.Settings.ES
-        EnglishToolStripMenuItem.CheckState = My.Settings.EN
-        If EspañolToolStripMenuItem.CheckState = CheckState.Checked Then Español(True)
-        If EnglishToolStripMenuItem.CheckState = CheckState.Checked Then
-            English(True)
-        Else
-            Español(True)
-            EspañolToolStripMenuItem.CheckState = CheckState.Checked
-        End If
+        English()
+        ''Cargar Idioma
+        'EnglishToolStripMenuItem.CheckState = My.Settings.EN
+        'If EnglishToolStripMenuItem.CheckState = CheckState.Checked Then
+        '    English()
+        '    EnglishToolStripMenuItem.CheckState = CheckState.Checked
+        '    EspañolToolStripMenuItem.CheckState = CheckState.Unchecked
+        'Else
+        '    Español()
+        '    EspañolToolStripMenuItem.CheckState = CheckState.Checked
+        '    EnglishToolStripMenuItem.CheckState = CheckState.Unchecked
+        'End If
         My.Computer.FileSystem.CreateDirectory(Application.StartupPath & "\temp") ' "Directorio temporal para trabajar con el audio adx c:/temp"
         Dim b() As Byte = My.Resources.ADX2WAV
         File.WriteAllBytes(Application.StartupPath & "\temp\ADX2WAV.EXE", b)
@@ -699,7 +692,6 @@ Public Class Form1
 
         End Try
         'Guardar idioma elegido
-        My.Settings.ES = EspañolToolStripMenuItem.CheckState
         My.Settings.EN = EnglishToolStripMenuItem.CheckState
         My.Settings.Save()
     End Sub
@@ -730,8 +722,8 @@ Public Class Form1
         adxplay()
     End Sub
     'play
-    
-    
+
+
     'Play
     Private Sub Btnplay_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Btnplay.Click
         adx_extract(OFDs_sound.FileName, Me.DataGridView1.CurrentRow.Cells(2).Value.ToString)
@@ -812,63 +804,6 @@ Public Class Form1
         Find = False
     End Function
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        'Dim indexrow As Integer = -1
-        '':::Nos permite recorrer las filas del DGTabla
-        'For Each Row As DataGridViewRow In DataGridView1.Rows
-        '    ':::Nos permite recorrer las celdas del DGTabla
-        '    For Each Cell As DataGridViewCell In Row.Cells
-        '        ':::Validamos el registro del DGTabla contra el criterio de busqueda
-        '        If Cell.Value.ToString = "2" Then
-        '            ':::Nos ubicamos en la celda que contiene el registro encontrado
-        '            'DataGridView1.CurrentCell = Cell
-
-        '            indexrow = Row.Index
-        '        End If
-        '    Next
-        'Next
-        'If indexrow = -1 Then
-        '    DataGridView1.Rows.Insert(2, 2, 2, True)
-        'Else
-        '    DataGridView1.Rows(indexrow).Cells(1).Value = "CP"
-        'End If
-
-
-        'Exit Sub
-        'Dim open_csv As New System.Windows.Forms.OpenFileDialog
-        'open_csv.Filter = "CSV File |*.csv" + "|All Files|*.*"
-        'If open_csv.ShowDialog() = Windows.Forms.DialogResult.OK Then
-
-        '    GuardarToolStripMenuItem.Enabled = True
-        '    GuardarComoToolStripMenuItem.Enabled = True
-        '    GroupBox1.Enabled = True
-        '    GroupBox3.Enabled = True
-        '    GroupBox4.Enabled = True
-        '    DataGridView1.Enabled = True
-        '    BtnBorrar.Enabled = True
-        '    BtnBorrartodo.Enabled = True
-        '    DataGridView1.Rows.Clear()
-
-        '    Using fielRead As New StreamReader(open_csv.FileName)
-        '        Dim line As String = fielRead.ReadLine
-        '        Do While (Not line Is Nothing)
-
-        '            Dim partes As String() = line.Split(","c) ' se establece el separador 
-        '            line = fielRead.ReadLine
-        '            If (partes(0) = "ID") Then
-        '            Else
-
-        '                'DataGridView1.Rows(1).Cells(0).Value = "ID"
-        '                'DataGridView1.Rows(1).Cells(1).Value = "Nombre"
-        '                'DataGridView1.Rows(1).Cells(2).Value = "unknow"
-
-        '                DataGridView1.Rows.Add(partes(0), partes(1), partes(2), True)
-        '            End If
-        '        Loop
-
-        '    End Using
-        '    MsgBox("OK", MsgBoxStyle.Information)
-        'End If
-
         Dim open_csv As New System.Windows.Forms.OpenFileDialog
         open_csv.Filter = "CSV File |*.csv" + "|All Files|*.*"
         If open_csv.ShowDialog() = Windows.Forms.DialogResult.OK Then
@@ -891,15 +826,6 @@ Public Class Form1
                     line = fielRead.ReadLine
                     If Not IsNumeric(partes(0)) Then
                     Else
-                        'Dim index As Integer = partes(0) - 1
-
-                        'If partes(0) > DataGridView1.Rows.Count Then
-                        '    DataGridView1.Rows.Add(index, partes(1), partes(2), True)
-                        'Else
-                        '    DataGridView1.Rows(index).Cells(1).Value = partes(1)
-                        '    DataGridView1.Rows(index).Cells(2).Value = partes(2)
-                        'End If
-
                         Dim indexrow As Integer = -1
                         ':::Nos permite recorrer las filas del DGTabla
                         For Each Row As DataGridViewRow In DataGridView1.Rows
@@ -917,11 +843,6 @@ Public Class Form1
                 Loop
             End Using
             MsgBox("OK", MsgBoxStyle.Information)
-
-            'Actualizar id
-            'For ix = 1 To DataGridView1.Rows.Count
-            '    DataGridView1.Rows(ix - 1).Cells(0).Value = ix
-            'Next
         End If
     End Sub
 End Class
