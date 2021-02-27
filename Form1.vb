@@ -76,7 +76,30 @@ Public Class Form1
     ' Guardar Como el Archivo
     Private Sub GuardarComoToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles GuardarComoToolStripMenuItem.Click
         If SFD.ShowDialog = Windows.Forms.DialogResult.OK Then
-            My.Computer.FileSystem.CopyFile(OFD.FileName, SFD.FileName, overwrite:=True)
+
+            If File.Exists(OFD.FileName) Then
+                My.Computer.FileSystem.CopyFile(OFD.FileName, SFD.FileName, overwrite:=True)
+            Else
+                Dim b(304331) As Byte
+                File.WriteAllBytes(SFD.FileName, b)
+
+                Dim fs As New FileStream(SFD.FileName, FileMode.Open)
+                Dim bw As New BinaryWriter(fs)
+
+                'Cantidad de callnames
+                fs.Position = 4
+                bw.Write(Int32.Parse(&H4A4AC))
+                fs.Position = 8
+                bw.Write(Int32.Parse(&H4A4AC))
+                fs.Position = 36
+                bw.Write(Int32.Parse(&H1A0001))
+
+                bw.Close()
+                fs.Close()
+
+            End If
+
+            GuardarToolStripMenuItem.Enabled = True
             OFD.FileName = SFD.FileName
             Guardar(OFD.FileName)
         End If
@@ -98,6 +121,7 @@ Public Class Form1
         'Cantidad de callnames
         fs.Position = 32
         bw.Write(Int16.Parse(DataGridView1.Rows.Count))
+
 
 
         Dim Ncallnames As Double = (DataGridView1.Rows.Count) / 15 'DataGridView1.Rows.Count - 1
@@ -788,8 +812,27 @@ Public Class Form1
         Find = False
     End Function
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        'Dim indexrow As Integer = -1
+        '':::Nos permite recorrer las filas del DGTabla
+        'For Each Row As DataGridViewRow In DataGridView1.Rows
+        '    ':::Nos permite recorrer las celdas del DGTabla
+        '    For Each Cell As DataGridViewCell In Row.Cells
+        '        ':::Validamos el registro del DGTabla contra el criterio de busqueda
+        '        If Cell.Value.ToString = "2" Then
+        '            ':::Nos ubicamos en la celda que contiene el registro encontrado
+        '            'DataGridView1.CurrentCell = Cell
 
-        'DataGridView1.Rows.Insert(2, 2, 2, True)
+        '            indexrow = Row.Index
+        '        End If
+        '    Next
+        'Next
+        'If indexrow = -1 Then
+        '    DataGridView1.Rows.Insert(2, 2, 2, True)
+        'Else
+        '    DataGridView1.Rows(indexrow).Cells(1).Value = "CP"
+        'End If
+
+
         'Exit Sub
         'Dim open_csv As New System.Windows.Forms.OpenFileDialog
         'open_csv.Filter = "CSV File |*.csv" + "|All Files|*.*"
@@ -830,7 +873,7 @@ Public Class Form1
         open_csv.Filter = "CSV File |*.csv" + "|All Files|*.*"
         If open_csv.ShowDialog() = Windows.Forms.DialogResult.OK Then
 
-            GuardarToolStripMenuItem.Enabled = True
+            'GuardarToolStripMenuItem.Enabled = True
             GuardarComoToolStripMenuItem.Enabled = True
             GroupBox1.Enabled = True
             GroupBox3.Enabled = True
@@ -846,21 +889,31 @@ Public Class Form1
                 Do While (Not line Is Nothing)
                     Dim partes As String() = line.Split(","c) ' se establece el separador 
                     line = fielRead.ReadLine
-
                     If Not IsNumeric(partes(0)) Then
                     Else
-                        Dim index As Integer = partes(0) - 1
+                        'Dim index As Integer = partes(0) - 1
 
-                        If partes(0) > DataGridView1.Rows.Count Then
-                            DataGridView1.Rows.Add(DataGridView1.Rows.Count + 1, partes(1), partes(2), True)
+                        'If partes(0) > DataGridView1.Rows.Count Then
+                        '    DataGridView1.Rows.Add(index, partes(1), partes(2), True)
+                        'Else
+                        '    DataGridView1.Rows(index).Cells(1).Value = partes(1)
+                        '    DataGridView1.Rows(index).Cells(2).Value = partes(2)
+                        'End If
+
+                        Dim indexrow As Integer = -1
+                        ':::Nos permite recorrer las filas del DGTabla
+                        For Each Row As DataGridViewRow In DataGridView1.Rows
+                            If DataGridView1.Item(0, Row.Index).Value = partes(0) Then
+                                indexrow = Row.Index
+                                Exit For
+                            End If
+                        Next
+                        If indexrow = -1 Then
+                            DataGridView1.Rows.Add(partes(0), partes(1), partes(2), True)
                         Else
-                            DataGridView1.Rows(index).Cells(1).Value = partes(1)
-                            DataGridView1.Rows(index).Cells(2).Value = partes(2)
+                            DataGridView1.Rows(indexrow).Cells(2).Value = partes(2)
                         End If
-
-
                     End If
-                    'MsgBox(line)
                 Loop
             End Using
             MsgBox("OK", MsgBoxStyle.Information)
