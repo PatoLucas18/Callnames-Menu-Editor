@@ -669,18 +669,17 @@ Public Class Form1
     ' Cargar Formulario
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
-        English()
-        ''Cargar Idioma
-        'EnglishToolStripMenuItem.CheckState = My.Settings.EN
-        'If EnglishToolStripMenuItem.CheckState = CheckState.Checked Then
-        '    English()
-        '    EnglishToolStripMenuItem.CheckState = CheckState.Checked
-        '    EspañolToolStripMenuItem.CheckState = CheckState.Unchecked
-        'Else
-        '    Español()
-        '    EspañolToolStripMenuItem.CheckState = CheckState.Checked
-        '    EnglishToolStripMenuItem.CheckState = CheckState.Unchecked
-        'End If
+        'Cargar Idioma
+        EnglishToolStripMenuItem.CheckState = My.Settings.EN
+        If EnglishToolStripMenuItem.CheckState = CheckState.Checked Then
+            English()
+            EnglishToolStripMenuItem.CheckState = CheckState.Checked
+            EspañolToolStripMenuItem.CheckState = CheckState.Unchecked
+        Else
+            Español()
+            EspañolToolStripMenuItem.CheckState = CheckState.Checked
+            EnglishToolStripMenuItem.CheckState = CheckState.Unchecked
+        End If
         My.Computer.FileSystem.CreateDirectory(Application.StartupPath & "\temp") ' "Directorio temporal para trabajar con el audio adx c:/temp"
         Dim b() As Byte = My.Resources.ADX2WAV
         File.WriteAllBytes(Application.StartupPath & "\temp\ADX2WAV.EXE", b)
