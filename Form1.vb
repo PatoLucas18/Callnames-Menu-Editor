@@ -771,7 +771,7 @@ Public Class Form1
                             Where Not row.IsNewRow
                             Select Array.ConvertAll(row.Cells.Cast(Of DataGridViewCell).ToArray, Function(c) If(c.Value IsNot Nothing, c.Value.ToString, ""))
 
-            Using sw As New IO.StreamWriter(save_csv.FileName)
+            Using sw As New StreamWriter(save_csv.FileName)
 
                 sw.WriteLine(String.Join(",", QueueHdr))
                 For Each r In QueueRows
@@ -780,6 +780,17 @@ Public Class Form1
 
             End Using
 
+            'Dim path As String = "c:\temp\MyTest.txt"
+            '' Create or overwrite the file.
+            'Dim fs As FileStream = File.Create(path)
+            '' Add text to the file.
+            'Dim info As Byte() = New UTF8Encoding(True).GetBytes("This is some text in the file.")
+            'fs.Write(info, 0, info.Length)
+            'fs.Close()
+
+            'Using filewrite As New StreamWriter("e", Encoding.UTF8)
+            '    filewrite.WriteLine(2)
+            'End Using
 
 
             MsgBox("OK", MsgBoxStyle.Information)
@@ -817,7 +828,7 @@ Public Class Form1
             BtnBorrartodo.Enabled = True
             'DataGridView1.Rows.Clear()
 
-            Using fielRead As New StreamReader(open_csv.FileName)
+            Using fielRead As New StreamReader(open_csv.FileName, System.Text.Encoding.UTF8)
                 Dim line As String = fielRead.ReadLine
 
                 Do While (Not line Is Nothing)
