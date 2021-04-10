@@ -31,7 +31,6 @@ Public Class Form1
         Me.OFD.Title = "Seleccionar archivo"
         '' abrir el diálogo 
         If OFD.ShowDialog = Windows.Forms.DialogResult.OK Then
-
             Me.Text = OFD.FileName & " - Callnames Menú editor"
             GuardarToolStripMenuItem.Enabled = True
             GuardarComoToolStripMenuItem.Enabled = True
